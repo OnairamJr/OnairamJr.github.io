@@ -6,21 +6,42 @@
 
 body {
     display: flex;
-    height: 100%;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    width: 100%;
 }
 
 a {
     text-decoration: none;
 }
 
-div {
+/* Header */
+
+header {
+    background-color: #FF5004;
+    width: 100%;
+    height: 55px;
+}
+
+header img {
+    margin-left: 20px;
+}
+
+/* Section */
+
+section {
+    display: flex;
+}
+
+#calculadora div {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
-    margin: 5% 0 20px 0;
+    margin: 10% 0 20px 0;
 }
 
 #calculadora {
+    height: 100%;
     width: 50%;
 }
 
@@ -30,14 +51,18 @@ input {
 }
 
 input::placeholder {
+    color: #FF5004;
     text-align: center;
 }
 
 button {
+    background-color: #FF5004;
+    color: #FFFFFF;
     width: 10em;
     height: 2em;
     font-size: 1em;
     border-radius: 5px 5px 5px;
+    border-style: hidden;
     margin-top: 20px;
     margin-inline: auto;
     -webkit-border-radius: 5px 5px 5px;
@@ -46,10 +71,15 @@ button {
     -o-border-radius: 5px 5px 5px;
 }
 
+button:active {
+    background-color: #a33100;
+}
+
 #accordion {
     margin-inline: auto;
-    margin: 7% 10% 0 0;
+    margin: 5% 5% 0 0;
     width: 50%;
+    height: 100%;
 }
 
 h4 {
@@ -57,15 +87,26 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
+    
+    
     body {
         display: flex;
-        flex-direction: column;
-        margin-left: 10%;
+        flex-flow: column;
         width: 100%;
     }
 
+    header {
+        width: 100%;
+        height: 45px;
+    }
+
+    header img {
+        margin-top: 2px;
+        height: 40px;
+    }
+
     #calculadora {
-        margin-top: 20%;
+        margin: 10% 0 10% 10%;
         width: 80%;
         height: 50%;
     }
@@ -74,4 +115,13 @@ h4 {
         width: 80%;
         height: 50%;
     }
+}
+
+#accordion button {
+    color: #FFFFFF;
+    background-color: #FF5004;
+}
+
+h3 {
+    color: #FF5004;
 }

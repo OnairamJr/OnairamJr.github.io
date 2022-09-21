@@ -4,84 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/IMG/n_net.com.png" type="image/x-icon">
+    <meta name="theme-color" content="#ff5004">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/CSS/style.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script>
-    $( function() {
-        $( "#accordion" ).accordion();
-    } );
-    </script>
-    <title>TESTE</title>
+    <title>Calculadora de IGP-M</title>
 </head>
 <body>
-    <div id="calculadora">
-        <div>
-            <input type="number" name="SCM" id="scm" placeholder="SCM">
-            <input type="number" name="paramout" id="paramout" placeholder="Paramount+">
-            <input type="number" name="noggin" id="noggin" placeholder="Noggin">
-            <input type="number" name="Roteador" id="roteador" placeholder="Roteador">
-            <input type="number" name="IGPM" id="igpm" placeholder="IGP-M">
-            <a href="https://brasilindicadores.com.br/igpm/" target="_blank">Consultar IGP-M</a>
-        </div>
-        
-        <p>Valor Atualizado: </p>
 
-        <button>Calcular</button>
-        
-    </div>
+    <header>
+      <img src="./assets/IMG/net.com_logo_white.png" alt="N_NET.COM.PNG" height="50px">
+    </header>
 
-    <div id="accordion">
-        <h3>Section 1</h3>
-        <div>
-          <p>
-          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-          </p>
-        </div>
-        <h3>Section 2</h3>
-        <div>
-          <p>
-          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-          suscipit faucibus urna.
-          </p>
-        </div>
-        <h3>Section 3</h3>
-        <div>
-          <p>
-          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-          </p>
-          <ul>
-            <li>List item one</li>
-            <li>List item two</li>
-            <li>List item three</li>
-          </ul>
-        </div>
-        <h3>Section 4</h3>
-        <div>
-          <p>
-          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-          mauris vel est.
-          </p>
-          <p>
-          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos.
-          </p>
-        </div>
+    <section>
+      <div id="calculadora">
+          <div>
+              <input type="number" name="SCM" id="scm" placeholder="SCM">
+              <input type="number" name="paramout" id="paramout" placeholder="Paramount+">
+              <input type="number" name="noggin" id="noggin" placeholder="Noggin">
+              <input type="number" name="Roteador" id="roteador" placeholder="Roteador">
+              <input type="number" name="IGPM" id="igpm" placeholder="IGP-M">
+              <a href="https://brasilindicadores.com.br/igpm/" target="_blank">Consultar IGP-M</a>
+
+              <p>Valor Atualizado: </p>
+
+              <button>Calcular</button>
+          </div>
+          
+          
+          
       </div>
 
+      <div id="accordion">
+        <h3>Perguntas Frequentes</h3>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                O QUE É IGP-M?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                O <strong>IGP-M</strong> é um índice calculado pela FGV com o objetivo de medir a variação dos preços de diversos produtos e serviços no Brasil. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                O QUE É ICMS?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>ICMS</strong>, ou Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação  é um imposto cobrado pela movimentação de mercadorias.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                COMO É FEITO O CÁLCULO?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Primeiro, devemos realizar o desconto de 12% do ICMS sob o valor de SCM (Serviço de Comunicação Multimidia), em seguida soma-se o Comodato, e o SVA (Serviço de Valor Adicionado) e o percentual do IGP-M acumulado dos últimos 12 meses.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                PODEMOS REALIZAR ESSE REAJUSTE!?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Sim. Essa reajuste está previsto no contrato CLÁUSULA <strong>12.5</strong> (3.6 dos contratos recentes) que diz:
+                "os VALORES DESDE CONTRATO SERÃO REAJUSTADOS a cada período de 12 meses, através do índice IGPM-FGV ou outro da mesma natureza. Caso vedada legalmente à utilização desse índice, será utilizado índice legalmenete indicado para substituí-lo".
+                </br>
+                Além disso, da RESOLUÇÃO <strong>N°632</strong>, de Março de 2014 da ANATEL arts. <strong>50</strong> e <strong>65</strong> prevê:
+                </br></br>
+                Art. <strong>50</strong>. Antes da contratação, devem ser claramente informados ao Consumidor todas as condições relativas ao serviço, especialmente, quando for o caso: III - data e regras de reajuste;
+                </br></br>
+                Art. <strong>65</strong>. Os reajustes dos valores das tarifas ou preços não podem ser realizados em prazo inferiores a 12 meses.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                OS CLIENTES FORAM COMUNICADOS DESSA MUDANÇA!?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Sim. O reajuste após os 12 meses de prestação do serviços, está previsto em contrato. Além disso, a partir do inicio do mês de Setembro os clientes receberam comunicados via e-mail sobre o reajuste.
+                </br></br>
+
+                <img src="./assets/IMG/comunicado_netcom.jpeg" alt="COMUNICADO_NETCOM_IGPM_2022" height="500px">
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                COMO PROCEDER EM CASO DE QUESTINAMENTO DO COMUNICADO
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                "O email refere-se ao reajuste no valor das mensalidades com base no Índice Geral de Preços do Mercado (IGP-M), como já estava previsto também na cláusula do seu contrato. Verificamos que alguns contratos estavam com valores e serviços desatualizados, inclusive posso estar transferindo o seu atendimento para o setor comercial para verificar as ofertas que temos disponível para você."
+                </br></br>
+
+                Lembrando que devemos sempre direciona-lo a alteração de sua oferta.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                COMO PROCEDER EM CASO DE QUESTINAMENTO SOBRE O VALOR
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                "O índice é disponibilizado ao final de cada mês, com base no último índice IGP-M que foi de (Informar porcentagem correspondente). O valor aproximado para as suas mensalidades, com o desconto de SCM e o reajuste do IGP-M, é de (Informar valor previamente calculado).Vi aqui que seu plano está desatualizado e temos melhores condições pra você, posso te passar para o comercial te informar as ofertas disponíveis".
+                </br></br>
+
+                Lembrando que devemos sempre direciona-lo a alteração de sua oferta.
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
     <script src="./assets/JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
