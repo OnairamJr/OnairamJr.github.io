@@ -16,14 +16,18 @@ let calc = () => {
     p.innerHTML = `Valor Atualizado: R$ ${total.toFixed(2)}.`;
 };
 
-let keyEnter = (event) => {
-    if (event.key === 'Enter') {
-        calc();
+(function() {
+    let input = document.getElementsByTagName('input');
+
+    for (i = 0; i < input.length; i++) {
+        input[i].addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                calc();
+            }
+        })
     }
-};
+})();
 
 calc();
 
 btn.addEventListener('click', calc);
-
-igpm.addEventListener('keypress', keyEnter);
