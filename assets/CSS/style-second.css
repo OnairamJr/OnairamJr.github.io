@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(../IMG/Prancheta.png);
+    background-size: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 55px;
+}
+
+header img {
+    margin-left: 20px;
+}
