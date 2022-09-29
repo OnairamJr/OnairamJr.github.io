@@ -7,8 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background: url(../IMG/Prancheta.png);
-    background-size: 100%;
+    background-color: #DDD9CE;
     width: 100%;
 }
 
@@ -19,10 +18,40 @@ a {
 /* Header */
 
 header {
+    background-color: #FF5004;
     width: 100%;
     height: 55px;
 }
 
 header img {
     margin-left: 20px;
+}
+
+/* Section */
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 5% auto 5% auto;
+    padding: 5em;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    background-color: #FFFFFF10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+section h1 {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+section div {
+    margin-top: 5%;
 }
